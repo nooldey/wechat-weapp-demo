@@ -1,14 +1,52 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/demo/demo",
-    "pages/swiper/swiper"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "微信小程序",
-    "navigationBarTextStyle":"black"
-  }
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/demo/demo",
+        "pages/donate/donate",
+        "components/swiper/swiper",
+        "components/text/text",
+        "components/progress/progress",
+        "components/icon/icon",
+        "components/view/view",
+        "components/view-scroll/view-scroll"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "微信小程序",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#ccc",
+        "selectedColor": "#35495e",
+        "borderStyle": "white",
+        "backgroundColor": "#f9f9f9",
+        "list": [
+            {
+                "text": "首页",
+                "pagePath": "pages/index/index",
+                "iconPath": "images/home.png",
+                "selectedIconPath": "images/home.png"
+            },
+            {
+                "text": "组件",
+                "pagePath": "pages/demo/demo",
+                "iconPath": "images/demo.png",
+                "selectedIconPath": "images/demo.png"
+            },
+            {
+                "text": "日志",
+                "pagePath": "pages/logs/logs",
+                "iconPath": "images/log.png",
+                "selectedIconPath": "images/log.png"
+            },
+            {
+                "text": "赞赏",
+                "pagePath": "pages/donate/donate",
+                "iconPath": "images/donate.png",
+                "selectedIconPath": "images/donate.png"
+            }
+        ]
+    }
 }

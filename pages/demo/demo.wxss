@@ -1,28 +1,15 @@
-@import "../../components/view/view.wxss";
-
-.head_title {
-	font-weight: bold;
-	font-size: 16px;
-	color: #333;
-	margin-top: 35px;
-	margin-bottom: 15px;
-	padding-bottom: 5px;
-	border-bottom: 1px solid #333;
-	text-align: center;
-}
-
-.scroll-view-item {
-	height: 100%;
-}
-.section_gap {
-	margin-top: 100px;
-}
-.scroll-view_H {
-	white-space: nowrap;
-	width: 100%;
-}
-.scroll-view-item_H {
+.demo-block button {
 	display: inline-block;
-	height: 100%;
-	width: 100%;
+	margin: 5px;
 }
+.head_title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+

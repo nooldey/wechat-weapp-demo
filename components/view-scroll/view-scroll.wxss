@@ -1,0 +1,14 @@
+.scroll-view-item {
+    height: 100%;
+}
+
+.scroll-view_H {
+    white-space: nowrap;
+    width: 100%;
+}
+
+.scroll-view-item_H {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}

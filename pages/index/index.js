@@ -6,17 +6,6 @@ Page({
     motto: 'Hello World',
     userInfo: {}
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  CatchViewTap: function() {
-    wx.navigateTo({
-      url: '../demo/demo'
-    })
-  },
   onLoad: function () {
     console.log('onLoad')
     var that = this
