@@ -1,0 +1,72 @@
+<view class="section">
+  <view class="section__title">基础内容</view>
+  <scroll-view scroll-y="true" style="height: 50vh;" 
+  bindscrolltoupper="upper" 
+  bindscrolltolower="lower" 
+  bindscroll="scroll" 
+  scroll-into-view="{{toView}}" 
+  scroll-top="{{scrollTop}}">
+    <view id="text" class="scroll-view-item">
+    	<!-- 基础内容text -->
+		<view class="head_title"><text>基础内容text：</text></view>
+		<view class="btn-area">
+			<view class="body-view">
+				<text>{{text}}</text>
+				<button bindtap="add">add line</button>
+				<button bindtap="clear">clear line</button>
+				<button bindtap="remove">remove line</button>
+			</view>
+		</view>
+    </view>
+
+    <view id="icon"  class="scroll-view-item">
+    	<!-- 基础内容icon -->
+		<view class="head_title"><text>基础内容icon：</text></view>
+		<include src="../../components/icon/icon.wxml" />
+    </view>
+
+    <view id="progress" class="scroll-view-item">
+    	<!-- 基础内容progress -->
+		<view class="head_title"><text>基础内容progress</text></view>
+		<progress percent="20" show-info />
+		<progress percent="40" stroke-width="12" />
+		<progress percent="60" color="pink" />
+		<progress percent="80" active />
+		<progress percent="100" active />
+    </view>
+  </scroll-view>
+
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">下一帧</button>
+    <button size="mini" bindtap="tapMove">点击滚动</button>
+  </view>
+</view>
+
+<view class="section section_gap">
+  <view class="section__title">视图容器</view>
+  <scroll-view class="scroll-view_H" style="height: 200px;" scroll-x="true"
+  bindscroll="scroll"
+  bindscrolltolower="toLower"
+  scroll-left="{{scrollLeft}}">
+    <view id="Hgreen" class="scroll-view-item_H bc_green"></view>
+    <view id="Hred"  class="scroll-view-item_H bc_red"></view>
+    <view id="Hblue"  class="scroll-view-item_H bc_blue"></view>
+    <view id="Hyellow"  class="scroll-view-item_H bc_yellow"></view>
+  </scroll-view>
+
+  <view class="btn-area">
+    <button size="mini" bindtap="tapH">下一帧</button>
+  </view>
+</view>
+
+
+<!-- 视图容器view -->
+<view class="head_title"><text>视图容器view：</text></view>
+<import src="../../components/view/view.wxml" />
+<template is="view" data="{{text: 'nooldey'}}"></template>
+
+<!-- 幻灯片swiper -->
+<view class="head_title"><text>幻灯片swiper：</text></view>
+<view>
+	<button bindtap="goToSlide">跳转到swiper</button>
+</view>

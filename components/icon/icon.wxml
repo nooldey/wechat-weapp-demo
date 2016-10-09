@@ -1,0 +1,23 @@
+<view class="group">
+  <block wx:for="{{iconSize}}">
+    <icon type="success" size="{{item}}"/>
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="45"/>
+  </block>
+</view>
+
+
+<view class="group">
+  <block wx:for="{{iconColor}}">
+    <icon type="success" size="45" color="{{item}}"/>
+  </block>
+</view>
+
+<!-- 采用import引入并调用的组件可以被icon组件的父组件通过include icon继续引用，无需重复引用 -->
+<!-- 
+<import src="../view/view.wxml"/>
+<template is="view" data="{{text: 'XM2 '}}"></template> -->
