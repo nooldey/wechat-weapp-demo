@@ -15,7 +15,9 @@
         "components/form/form",
         "components/input/input",
         "components/label/label",
-        "components/picker/picker"
+        "components/picker/picker",
+        "components/slider/slider",
+        "components/action-sheet/action-sheet"
     ],
     "window": {
         "backgroundTextStyle": "dark",

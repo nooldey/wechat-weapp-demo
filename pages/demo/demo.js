@@ -12,10 +12,12 @@ Page({
         	'form',
             'input',
             'label',
-            'picker'
+            'picker',
+            'slider',
+            'action-sheet'
         ]
     },
-    goTo: function(t) {
+    goTo(t) {
         var n = t.target.dataset.name;
         wx.navigateTo({
             url: '../../components/' + n + '/' + n
