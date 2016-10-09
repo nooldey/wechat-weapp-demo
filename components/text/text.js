@@ -1,4 +1,4 @@
-var initData = "this is the first line \n";
+var initData = "这是初始化的一行文字";
 var extraLine = [];
 
 Page({
@@ -6,7 +6,7 @@ Page({
 		text: initData
 	},
 	add: function() {
-        extraLine.push('other line')
+        extraLine.push('我被加进来了')
         this.setData({
             text: initData + '\n' + extraLine.join('\n')
         })

@@ -1,12 +1,5 @@
-<!-- 基础内容text -->
-<!-- 基础内容icon -->
-<!-- 基础内容progress -->
-<!-- 视图容器view -->
-<!-- 视图容器view-scroll -->
-<!-- 幻灯片swiper -->
-
-<view class="demo-block">
-    <block wx:for="{{components}}" wx:for-item="item">
+<view class="container demo-block">
+    <block wx:for="{{components}}">
         <button type="primary" size="mini" bindtap="goTo" data-name="{{item}}" hover-class="custom-button-hover-class"> {{item}} </button>
     </block>
 </view>

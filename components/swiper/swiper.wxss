@@ -1,0 +1,16 @@
+.slide-image {
+	height: 150px;
+	width: 375px;
+	margin: 0 auto;
+	object-fit: contain;
+}
+.slide-btn button {
+	display: inline-block;
+	margin: 5px;
+}
+.slide-text {
+	margin: 8px 0;
+	line-height: 2;
+	font-size: 13px;
+	padding: 0 1.34em;
+}

@@ -1,0 +1,3 @@
+.btn-area button{
+	margin: 5px;
+}

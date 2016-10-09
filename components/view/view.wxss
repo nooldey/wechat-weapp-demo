@@ -8,13 +8,16 @@
 }
 .flex-wrp {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: flex-start;
+	height: 100px;
+	width: 100%;
 }
 .flex-item {
-	width: 100px;
-	height: 100px;
+	flex: 1;
 	text-align: center;
-	line-height: 100px;
 	color: #fff;
+	height: 100px;
+	line-height: 100px;
+	width: 100%;
 }

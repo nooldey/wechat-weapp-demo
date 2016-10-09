@@ -1,12 +1,19 @@
 Page({
     data: {
-        components: ['progress','swiper','text','icon','view','view-scroll']
-    },
-    goToSlide: function() {
-        wx.navigateTo({
-            url: '../../components/view-scroll/view-scroll'
-            // url: '../swiper/swiper'
-        })
+        components: [
+        	'swiper',
+        	'text',
+        	'icon',
+        	'progress',
+        	'view',
+        	'view-scroll',
+        	'button',
+        	'checkbox',
+        	'form',
+            'input',
+            'label',
+            'picker'
+        ]
     },
     goTo: function(t) {
         var n = t.target.dataset.name;

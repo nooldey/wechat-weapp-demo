@@ -1,8 +1,8 @@
-<view class="btn-area">
+<view class="container btn-area">
     <view class="body-view">
         <text>{{text}}</text>
-        <button bindtap="add">add line</button>
-        <button bindtap="clear">clear line</button>
-        <button bindtap="remove">remove line</button>
+        <button bindtap="add">添加一行文字</button>
+        <button bindtap="clear">清除增加的内容</button>
+        <button bindtap="remove">删除一行文字</button>
     </view>
 </view>

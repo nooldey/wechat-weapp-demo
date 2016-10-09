@@ -1,0 +1,3 @@
+.progress-block progress {
+	margin: 5px;
+}

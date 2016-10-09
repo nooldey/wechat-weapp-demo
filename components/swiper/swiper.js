@@ -9,7 +9,7 @@ Page({
     ],
     indicatorDots: false,
     autoplay: false,
-    interval: 5000,
+    interval: 2000,
     duration: 1000
   },
   changeIndicatorDots: function(e) {

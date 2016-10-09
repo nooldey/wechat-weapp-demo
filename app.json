@@ -9,19 +9,25 @@
         "components/progress/progress",
         "components/icon/icon",
         "components/view/view",
-        "components/view-scroll/view-scroll"
+        "components/view-scroll/view-scroll",
+        "components/button/button",
+        "components/checkbox/checkbox",
+        "components/form/form",
+        "components/input/input",
+        "components/label/label",
+        "components/picker/picker"
     ],
     "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "微信小程序",
-        "navigationBarTextStyle": "black"
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#0FAEFF",
+        "navigationBarTitleText": "微信小程序演示",
+        "navigationBarTextStyle": "white"
     },
     "tabBar": {
-        "color": "#ccc",
-        "selectedColor": "#35495e",
+        "color": "#666",
+        "selectedColor": "#268dcd",
         "borderStyle": "white",
-        "backgroundColor": "#f9f9f9",
+        "backgroundColor": "#fafafa",
         "list": [
             {
                 "text": "首页",

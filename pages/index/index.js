@@ -13,8 +13,7 @@ Page({
     app.getUserInfo(function(userInfo){
       //更新数据
       that.setData({
-        userInfo:userInfo,
-        motto: '当前用户：'+userInfo.nickName
+        userInfo:userInfo
       })
     })
   }
