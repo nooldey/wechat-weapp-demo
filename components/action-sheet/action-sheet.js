@@ -15,5 +15,6 @@ Page({
   },
   bindItemTap:function(e){
     console.log('tap ' + e.currentTarget.dataset.name)
+    this.actionSheetChange()   //选项后自动关闭
   }
 })

@@ -17,7 +17,11 @@
         "components/label/label",
         "components/picker/picker",
         "components/slider/slider",
-        "components/action-sheet/action-sheet"
+        "components/action-sheet/action-sheet",
+        "components/modal/modal",
+        "components/toast/toast",
+        "components/loading/loading",
+        "components/navigator/navigator"
     ],
     "window": {
         "backgroundTextStyle": "dark",

@@ -14,7 +14,11 @@ Page({
             'label',
             'picker',
             'slider',
-            'action-sheet'
+            'action-sheet',
+            'modal',
+            'toast',
+            'loading',
+            'navigator'
         ]
     },
     goTo(t) {

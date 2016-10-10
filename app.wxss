@@ -2,6 +2,9 @@
 .container {
     padding: 20rpx;
 }
+button {
+	margin: 5px!important;
+}
 .bc_green {
 	background-color: #09BA07;
 }
