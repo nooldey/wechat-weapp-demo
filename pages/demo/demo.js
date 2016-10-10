@@ -18,7 +18,10 @@ Page({
             'modal',
             'toast',
             'loading',
-            'navigator'
+            'navigator',
+            'audio',
+            'image',
+            'video'
         ]
     },
     goTo(t) {

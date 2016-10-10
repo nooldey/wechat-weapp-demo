@@ -21,7 +21,10 @@
         "components/modal/modal",
         "components/toast/toast",
         "components/loading/loading",
-        "components/navigator/navigator"
+        "components/navigator/navigator",
+        "components/audio/audio",
+        "components/image/image",
+        "components/video/video"
     ],
     "window": {
         "backgroundTextStyle": "dark",

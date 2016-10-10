@@ -1,0 +1,11 @@
+.section_gap {
+	border: 1px solid #ccc;
+	margin-bottom: 5px;
+}
+.section__title {
+	font-size: 14px;
+	margin: 10px 0;
+}
+.section__ctn {
+	text-align: center;
+}
