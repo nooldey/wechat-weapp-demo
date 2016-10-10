@@ -37,9 +37,12 @@ Page({
       mode: 'bottom right',
       text: 'bottom right：不缩放图片，只显示图片的右下边区域'
     }],
-    src: '/images/cat.jpg'
+    src: 'http://ws1.sinaimg.cn/large/610dc034jw1f87z2n2taej20u011h11h.jpg' //'/images/cat.jpg'
   },
   imageError: function(e) {
     console.log('image3发生error事件，携带值为', e.detail.errMsg)
+    this.setData({
+      src: '/images/cat.jpg'
+    })
   }
 })

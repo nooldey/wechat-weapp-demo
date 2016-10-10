@@ -1,0 +1,5 @@
+<map longitude="113.324520" latitude="23.099994" markers="{{markers}}" covers="{{covers}}" style="width: 375px; height: 200px;"></map>
+
+<view>微信开发者工具暂不支持map组件</view>
+
+<view class="container"><button type="primary" bindtap="getMap">获取API地图</button></view>

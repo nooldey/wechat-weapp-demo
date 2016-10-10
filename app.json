@@ -24,7 +24,9 @@
         "components/navigator/navigator",
         "components/audio/audio",
         "components/image/image",
-        "components/video/video"
+        "components/video/video",
+        "components/map/map",
+        "components/canvas/canvas"
     ],
     "window": {
         "backgroundTextStyle": "dark",

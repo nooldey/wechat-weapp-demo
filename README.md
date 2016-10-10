@@ -31,3 +31,15 @@ wx.setNavigationBarTitle({
 
 注意： 此处所指json、js文件为同名文件。
 当json文件存在并已设置navigationBarTitle时，导航栏标题将默认显示该title，且无法通过js修改（js所修改title将仅显示一秒不到，而后又被json的title替换掉）
+
+##map大坑！
+开发者工具，目前暂不支持map.
+显示地图，只能通过api进行调取，不建议通过bind操作后执行地图调取操作，否则会报错。
+
+```bash
+Page route错误
+WAService.js:2 navigateBack 一个不存在的webviewId41
+```
+
+`wx.getLocation`
+`wx.openLocation`

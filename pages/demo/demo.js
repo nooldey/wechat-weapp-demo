@@ -21,7 +21,9 @@ Page({
             'navigator',
             'audio',
             'image',
-            'video'
+            'video',
+            'map',
+            'canvas'
         ]
     },
     goTo(t) {
