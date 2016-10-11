@@ -10,5 +10,8 @@ Page({
         return util.formatTime(new Date(log))
       })
     })
+  },
+  onReady: function() {
+    console.log('日志页面加载完成')
   }
 })

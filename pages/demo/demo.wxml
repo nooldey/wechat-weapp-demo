@@ -1,5 +1,8 @@
 <view class="container demo-block">
-    <block wx:for="{{components}}">
-        <button type="primary" size="mini" bindtap="goTo" data-name="{{item}}" hover-class="custom-button-hover-class"> {{item}} </button>
+    <block wx:for="{{components}}" wx:for-item="component">
+    	<view> {{ component.title }} </view>
+    	<block wx:for="{{component.items}}" wx:for-item="item">
+    			<button type="default" size="default" bindtap="goTo" data-name="{{item}}" hover-class="custom-button-hover-class"> {{item}} </button>
+    	</block>
     </block>
 </view>

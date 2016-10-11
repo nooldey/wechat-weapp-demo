@@ -1,0 +1,20 @@
+<view class="container">
+	<text>小程序API列表</text>
+	<button type="warn" size="mini" bindtap="resetData">重置页面</button>
+
+	<view class="apirequest">
+		<button type="default" size="mini" loading="{{getRes.status && !getRes.data.length}}" disabled="{{getRes.status}}" bindtap="ApiGetRequest">发起GET请求</button>
+		<block wx:for="{{getRes.data}}" wx:for-item="repo">
+			<text>{{repo.name + '\n'}}</text>
+		</block>
+		<button type="default" size="mini" loading="{{postRes.status && !postRes.data.length}}" disabled="{{postRes.status}}" bindtap="ApiPostRequest">发起POST请求</button>
+		<block wx:for="{{postRes.data}}" wx:for-item="string">
+			<text>{{string}}</text>
+		</block>
+	</view>
+
+	<view class="apiFiles">
+		<button type="default" size="mini" bindtap="ApiUploadFile">[*]上传文件(image/)</button>
+		<button type="default" size="mini" bindtap="ApiDownloadFile">[*]下载文件(image/audio/video)</button>
+	</view>
+</view>

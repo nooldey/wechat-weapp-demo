@@ -3,13 +3,15 @@
         "pages/index/index",
         "pages/logs/logs",
         "pages/demo/demo",
+        "pages/api/api",
         "pages/donate/donate",
+
         "components/swiper/swiper",
         "components/text/text",
         "components/progress/progress",
         "components/icon/icon",
         "components/view/view",
-        "components/view-scroll/view-scroll",
+        "components/scroll-view/scroll-view",
         "components/button/button",
         "components/checkbox/checkbox",
         "components/form/form",
@@ -26,7 +28,14 @@
         "components/image/image",
         "components/video/video",
         "components/map/map",
-        "components/canvas/canvas"
+        "components/canvas/canvas",
+        
+        "apis/request/request",
+        "apis/websocket/websocket",
+        "apis/readImage/readImage",
+        "apis/record/record",
+        "apis/voice/voice",
+        "apis/backgroundAudio/backgroundAudio"
     ],
     "window": {
         "backgroundTextStyle": "dark",
@@ -53,8 +62,8 @@
                 "selectedIconPath": "images/demo.png"
             },
             {
-                "text": "日志",
-                "pagePath": "pages/logs/logs",
+                "text": "接口",
+                "pagePath": "pages/api/api",
                 "iconPath": "images/log.png",
                 "selectedIconPath": "images/log.png"
             },

@@ -1,0 +1,8 @@
+<view class="container">
+	<text>从本地选择图片并预览</text>
+	<button type="default" size="default" bindtap="chooseImage" hover-class="custom-button-hover-class">选择图片</button>
+	<button type="default" size="default" bindtap="previewImage" hover-class="custom-button-hover-class">预览图片</button>
+	<view>
+		<text>图片预览功能需在手机上预览测试</text>
+	</view>
+</view>

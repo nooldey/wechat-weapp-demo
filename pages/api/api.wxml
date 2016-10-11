@@ -1,0 +1,8 @@
+<view class="container api-demo">
+	<block wx:for="{{apis}}" wx:for-item="api">
+		<view>{{api.title}}</view>
+		<block wx:for="{{api.items}}" wx:for-item="item">
+		<button type="primary" size="default" bindtap="goTo" data-name="{{item}}"> {{item}} </button>
+		</block>
+	</block>
+</view>

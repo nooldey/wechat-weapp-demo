@@ -1,0 +1,8 @@
+<view class="container">
+	<text>录音功能</text>
+	<button type="default" size="default" bindtap="startRecord" hover-class="custom-button-hover-class">开始录音</button>
+	<button type="default" size="default" bindtap="stopRecord" hover-class="custom-button-hover-class">结束录音</button>
+	<view>
+		<text>此功能需在手机上测试</text>
+	</view>
+</view>

@@ -28,9 +28,5 @@ Page({
       canvasId: 'firstCanvas',
       actions: context.getActions() //获取绘图动作数组
     })
-    wx.drawCanvas({
-      canvasId: 'secondCanvas',
-      actions: context.getActions()
-    })
   }
 })

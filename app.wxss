@@ -2,6 +2,9 @@
 .container {
     padding: 20rpx;
 }
+text {
+	font-size: 13px;
+}
 button {
 	margin: 5px!important;
 }

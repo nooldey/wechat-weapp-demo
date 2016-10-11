@@ -16,5 +16,10 @@ Page({
         userInfo:userInfo
       })
     })
+  },
+  openLog: function() {
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
   }
 })

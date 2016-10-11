@@ -1,0 +1,9 @@
+<view class="container">
+	<text>音频播放</text>
+	<button type="primary" size="default" bindtap="playVoice">开始播放音频</button>
+	<button type="default" size="default" bindtap="pauseVoice">暂停播放</button>
+	<button type="warn" size="default" bindtap="stopVoice">结束播放</button>
+	<view>
+		<text>此功能需在手机上测试</text>
+	</view>
+</view>
