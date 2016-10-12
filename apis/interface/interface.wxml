@@ -1,0 +1,10 @@
+<view class="container">
+	<view><text>界面API演示，看到标题变了没？</text></view>
+	<view bindtap="navigate"><button>跳转到新页面</button></view>
+	<view bindtap="redirect"><button>在当前页面打开</button></view>
+	<view bindtap="back"><button>后退</button></view>
+	<view bindtap="hideKeyboard"><button>收起键盘</button></view>
+	<view bindtap="stopRefresh"><button>停止下拉刷新</button></view>
+
+</view>	
+<view><text>注意对比开发者工具调试界面顶部的提示文字[正在调试X个页面]中数字的变化</text></view>

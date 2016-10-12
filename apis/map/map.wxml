@@ -1,0 +1,1 @@
+<view class="container"><button type="primary" bindtap="getMap">获取当前位置</button></view>

@@ -3,22 +3,8 @@ Page({
 		websocketMessages: [],
         websocketOn: false
 	},
-	ApiConnectSocket() {
+    onReady() {
         var that = this;
-        wx.connectSocket({
-            url: 'ws://echo.websocket.org',
-            method: "get",
-            data: {},
-            header: {
-                'content-type': 'application/json'
-            },
-            success(res) {
-                console.log('websocket连接成功')
-            },
-            fail(err) {
-                console.log(err)
-            }
-        })
         wx.onSocketOpen(function(res) {
             that.setData({
                 websocketOn: true
@@ -36,13 +22,34 @@ Page({
                 websocketMessages: tmp
             })
         });
+        wx.onSocketClose(function(res) {
+            console.log('WebSocket 已关闭!')
+            that.setData({
+                websocketOn: false
+            })
+        });
+    },
+	ApiConnectSocket() {
+        wx.connectSocket({
+            url: 'ws://echo.websocket.org',
+            method: "get",
+            data: {},
+            header: {
+                'content-type': 'application/json'
+            },
+            success(res) {
+                console.log('websocket连接成功')
+            },
+            fail(err) {
+                console.log(err)
+            }
+        })
     },
     ApiSendSocketMes() {
         if (!this.data.websocketOn) {
             console.log('WebSocket 未打开,请检查')
             return;
         }
-        var that = this;
         wx.sendSocketMessage({
             //必需
             data: '您有一条新消息',
@@ -59,13 +66,7 @@ Page({
             console.log('WebSocket 未打开,请检查')
             return;
         }
-        var that = this;
         wx.closeSocket();
-        wx.onSocketClose(function(res) {
-            console.log('WebSocket 已关闭!')
-            that.setData({
-                websocketOn: false
-            })
-        });
+        
     }
 })		

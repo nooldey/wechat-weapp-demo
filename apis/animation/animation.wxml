@@ -1,0 +1,6 @@
+<view class="container">
+    <button type="default" size="default" bindtap="rotateAndScale">旋转同时放大</button>
+    <button type="primary" size="default" bindtap="rotateThenScale">先旋转后放大</button>
+    <button type="warn" size="default" bindtap="rotateAndScaleThenTranslate">先旋转同时放大，然后平移</button>
+</view>
+<view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>

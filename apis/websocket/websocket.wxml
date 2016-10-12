@@ -1,14 +1,8 @@
 <view class="websocket container">
-    <button type="default" size="mini" bindtap="ApiConnectSocket" disabled="{{websocketOn}}">开始连接WebSocket</button>
-    <block wx:for="{{websocketMessages}}" wx:for-item="msg">
-        <text> {{ msg + '\n'}} </text>
+    <button type="default" size="default" bindtap="ApiConnectSocket" disabled="{{websocketOn}}">开始连接WebSocket</button>
+    <block wx:for="{{websocketMessages}}" wx:for-item="msg" wx:for-index="idx">
+        <view>{{ idx }} : {{ msg }} </view>
     </block>
-    <button type="default" size="mini" disabled="{{!websocketOn}}" bindtap="ApiSendSocketMes">发送WebSocket信息</button>
-    <button type="default" size="mini" disabled="{{!websocketOn}}" bindtap="ApiCloseSocket">关闭WebSocket</button>
-</view>
-
-<view class="container">
-	<text>存在问题：当启动过一次websocket后，关闭websocket再次启动时，websocket的wx.onSocketOpen接口触发不止一次，而是以累积开启websocket的次数作为触发次数。</text>	
-	<text>如下图：</text>	
-	<image mode="aspectFit" src="../../images/websocket.png"></image>
+    <button type="default" size="default" disabled="{{!websocketOn}}" bindtap="ApiSendSocketMes">发送WebSocket信息</button>
+    <button type="default" size="default" disabled="{{!websocketOn}}" bindtap="ApiCloseSocket">关闭WebSocket</button>
 </view>

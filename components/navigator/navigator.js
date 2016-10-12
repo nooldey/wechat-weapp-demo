@@ -7,21 +7,23 @@ Page({
             this.setData({
                 title: options.title
             })
-            wx.setNavigationBarTitle({
-                title: this.data.title,
-                success: function(res) {
-                    console.log('success')
-                    console.log(res)
-                },
-                fail: function(res) {
-                    console.log('failed')
-                    console.log(res)
-                },
-                complete: function(res) {
-                    console.log('completed')
-                    console.log(res)
-                }
-            });
         }
+    },
+    onReady: function() {
+        wx.setNavigationBarTitle({
+            title: this.data.title,
+            success: function(res) {
+                console.log('success')
+                console.log(res)
+            },
+            fail: function(res) {
+                console.log('failed')
+                console.log(res)
+            },
+            complete: function(res) {
+                console.log('completed')
+                console.log(res)
+            }
+        });
     }
 })

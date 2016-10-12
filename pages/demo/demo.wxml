@@ -2,7 +2,7 @@
     <block wx:for="{{components}}" wx:for-item="component">
     	<view> {{ component.title }} </view>
     	<block wx:for="{{component.items}}" wx:for-item="item">
-    			<button type="default" size="default" bindtap="goTo" data-name="{{item}}" hover-class="custom-button-hover-class"> {{item}} </button>
+    			<button type="warn" size="default" bindtap="goTo" data-name="{{item}}" hover-class="custom-button-hover-class"> {{item}} </button>
     	</block>
     </block>
 </view>

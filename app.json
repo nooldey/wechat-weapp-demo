@@ -35,7 +35,15 @@
         "apis/readImage/readImage",
         "apis/record/record",
         "apis/voice/voice",
-        "apis/backgroundAudio/backgroundAudio"
+        "apis/backgroundAudio/backgroundAudio",
+        "apis/saveFile/saveFile",
+        "apis/chooseVideo/chooseVideo",
+        "apis/storage/storage",
+        "apis/storage_get/storage_get",
+        "apis/map/map",
+        "apis/device/device",
+        "apis/interface/interface",
+        "apis/animation/animation"
     ],
     "window": {
         "backgroundTextStyle": "dark",

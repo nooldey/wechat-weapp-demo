@@ -1,0 +1,13 @@
+<view class="container">
+	<button type="default" size="default" bindtap="setStorage">存储数据setStorage</button>
+	<button type="default" size="default" bindtap="setStorageSync">存储数据setStorageSync</button>
+
+	<button type="default" size="default" bindtap="clearStorage">清除数据clearStorage</button>
+	<button type="default" size="default" bindtap="clearStorageSync">清除数据clearStorageSync</button>
+	
+	<navigator url="../storage_get/storage_get"><button>跳转到获取数据</button></navigator>
+	<view>
+		<text>【说明】setStorage、getStorage、clearStorage为异步操作。</text>
+		<text>setStorageSync、getStorageSync、clearStorageSync为同步操作。</text>
+	</view>
+</view>

@@ -1,0 +1,6 @@
+<view class="container">
+	<button type="primary" size="default" bindtap="saveFile">保存录音</button>
+	<view>
+		<text>此功能需在手机上测试</text>
+	</view>
+</view>

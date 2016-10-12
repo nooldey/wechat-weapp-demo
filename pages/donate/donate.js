@@ -6,7 +6,9 @@ Page({
 		
 	},
 	onReady:function(){
-		
+		wx.setNavigationBarTitle({
+		  title: '来来来，请我喝杯咖啡'
+		});
 	},
 	onShow:function(){
 		

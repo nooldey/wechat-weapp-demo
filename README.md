@@ -8,7 +8,7 @@
 
 #开发过程中的坑(仅针对微信官方开发者工具0.9.023版本)
 
-##picker 在使用开发者工具时存在的bug
+##picker 在使用开发者工具时存在的bug(开发者工具0.10中已不存在该问题)
 
 `mode=selector`
 当可选项超过4个时，上拉选择无法滚动到第四个之后的选项。
@@ -41,5 +41,44 @@ Page route错误
 WAService.js:2 navigateBack 一个不存在的webviewId41
 ```
 
-`wx.getLocation`
-`wx.openLocation`
+涉及到的API有`wx.getLocation`和`wx.openLocation`
+
+----------------------------------------------------------------------------------------------------------
+
+###更新说明： 【 2016.10.12 开发者工具已经从0.9.023升级到0.10.101100版本 】，以下注解将仅针对0.10.1011版本。
+
+----------------------------------------------------------------------------------------------------------
+
+##API调用的一个坑
+
+凡涉及监听的接口（如：`wx.onSocketMessage`），建议丢到 `onLoad`或`onReady`代码段中，而不是在每个动作的定义函数内，因为这会导致该端口被不断累积触发，导致返回数据出现重复。
+具体可以看websocket案例，稍后会写在某文章中详细说明。
+
+```javascript
+onReady() {
+        var that = this;
+        wx.onSocketOpen(function(res) {
+            that.setData({
+                websocketOn: true
+            })
+            console.log('websocket连接已打开')
+        })
+        wx.onSocketError(function(res) {
+            console.log('websocket连接打开失败')
+        })
+        wx.onSocketMessage(function(res) {
+            console.log('收到服务器内容：', res.data)
+            var tmp = [].concat(that.data.websocketMessages);
+            tmp.push(res.data)
+            that.setData({
+                websocketMessages: tmp
+            })
+        });
+        wx.onSocketClose(function(res) {
+            console.log('WebSocket 已关闭!')
+            that.setData({
+                websocketOn: false
+            })
+        });
+    },
+```

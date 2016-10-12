@@ -1,0 +1,7 @@
+<view class="container">
+    <video src="{{src}}"></video>
+    <button bindtap="chooseVideo">获取视频</button>
+    <view>
+    	<text>此功能须在手机上测试</text>		
+    </view>
+</view>

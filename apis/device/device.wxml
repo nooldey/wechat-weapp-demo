@@ -1,0 +1,16 @@
+<view class="container">
+	<button type="default" size="default" bindtap="getNetwork">获取网络类型</button>
+	<button type="default" size="default" bindtap="getSystem">获取系统信息</button>
+	<text>重力感应须在手机端测试</text>		
+</view>
+
+<view class="container">
+	<block wx:if="{{ system }}">
+		<view>model : {{ system.model }}</view>
+		<view>pixelRatio : {{ system.pixelRatio }}</view>
+		<view>windowWidth : {{ system.windowWidth }}</view>
+		<view>windowHeight : {{ system.windowHeight }}</view>
+		<view>language : {{ system.language }}</view>
+		<view>version : {{ system.version }}</view>
+	</block>
+</view>
